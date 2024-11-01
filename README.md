@@ -40,7 +40,7 @@ Welcome to my Blog! This is a personal blog site where I share my journey in the
    ```bash
    python -m venv env
 4. Activate the virtual environment:
-     -on window:
+   -on window:
    ```bash
      .\env\Scripts\activate
 
