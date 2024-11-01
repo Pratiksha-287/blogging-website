@@ -1,0 +1,121 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ posts.title }} - My Blog</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: #f9f9f9; 
+      color: #333; 
+    }
+
+    a, a:hover, a:focus, a:active {
+      text-decoration: none;
+    }
+
+    /* Header */
+    .header {
+      padding: 20px;
+      font-size: 40px;
+      text-align: center;
+      background: white;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Navigation Bar */
+    nav {
+      background: #ffffff;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      padding: 10px 0;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    nav ul li {
+      margin: 0 20px;
+    }
+
+    nav ul li a {
+      color: #1abc9c; 
+      font-weight: 700;
+      font-size: 18px;
+      padding: 10px 15px;
+      border-radius: 5px;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    nav ul li a:hover {
+      background: #ffcc00; 
+      color: white; 
+    }
+
+    /* Blog Post */
+    .card {
+      background-color: white; 
+      padding: 20px;
+      margin-top: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      color: #1abc9c; /* Soft teal for titles */
+    }
+
+    h5 {
+      color: #888;
+      margin-bottom: 10px;
+    }
+
+    p {
+      line-height: 1.6;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <h2>My Blog</h2>
+  </div>
+
+  <nav>
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/about">About</a></li>
+      <li><a href="/contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="card">
+          <h1>{{ posts.title }}</h1>
+          <h5>{{ posts.created_at }}</h5>
+          <p>{{ posts.body }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
