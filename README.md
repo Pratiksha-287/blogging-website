@@ -58,7 +58,8 @@ Welcome to my Blog! This is a personal blog site where I share my journey in the
 8. Open your browser and go to http://127.0.0.1:8000/ to see your blog in action.
 
 ## Usage
-Feel free to explore the site, read blog posts, and learn more about me. You can also contribute by submitting issues or pull requests.
+ - Enter a city name in the input field and click "Get Weather."
+ - The application will display the current weather data along with a background image related to the city.
 
 ## Contributing
 If you want to contribute to this project, please fork the repository and create a new branch for your **feature** or **bug fix**. Then, submit a pull request for review.
