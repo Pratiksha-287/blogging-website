@@ -40,14 +40,12 @@ Welcome to my Blog! This is a personal blog site where I share my journey in the
    ```bash
    python -m venv env
 4. Activate the virtual environment:
-   -on window:
-   ```bash
+   - on window:
+     ```bash
      .\env\Scripts\activate
-
-  -On macOS/Linux:
-    ```bash
-           
-    source env/bin/activate
+   - On macOS/Linux:
+     ```bash
+     source env/bin/activate
 5. Install the required packages:
    ```bash
      pip install -r requirements.txt
